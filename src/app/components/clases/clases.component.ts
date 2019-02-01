@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClasesComponent implements OnInit {
 
-  alerta = 'alert-danger';
+  alerta = "alert-secondary";
   loading: boolean = false;
 
   propiedades = {
@@ -24,6 +24,7 @@ export class ClasesComponent implements OnInit {
 
     setTimeout(() => {
       this.loading = false;
+      this.alerta = 'alert-dark';
     }, 3000);
   }
 }
